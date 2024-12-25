@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: #1C1C1C;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.unit-converter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .heading {
+        background-color: #92400E;
+        padding: 40px;
+        text-align: center;
+        h1 {
+            font-weight: bolder;
+            font-style: italic;
+        }
+        input {
+            display: block;
+            margin: 30px auto 15px;
+            width: 80px;
+            height: 60px;
+            background-color: transparent;
+            border: none;
+            border-radius: 5px;
+            color: #FFFFFF;
+            font-size: 35px; 
+            font-weight: bold;
+            border: 2px solid white;
+            padding: 10px;
+            text-align: center;
+            
+            &:focus {
+                outline: none;
+            }
+        }
+        button {
+            color: #92400E;
+            display: block;
+            margin: 0 auto;
+            font-family: inherit;
+            background: white;
+            font-weight: bold;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .3s;
+            &:hover {
+                color: white;
+                background: #FCD34D;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+        p {
+            color: red;
+            text-shadow: 0 0 1px red;
+            opacity: 0;
+            margin-bottom: 8px;
+        }
+    }
+    .content {
+        background: #1F2937;
+        padding: 20px;;
+        .info {
+            padding: 15px;
+            background: #273549;
+            text-align: center;
+            margin-bottom: 20px;
+            h3 {
+                color: wheat;
+                margin-bottom: 12px;
+            }
+            #user-input {
+                color: #F59E0B;
+                font-weight: bold;
+            }
+            .result {
+                color: #FCD34D;
+            }
+        }
+    }
+}
